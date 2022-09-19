@@ -24,5 +24,3 @@ let j = function() {
 
 let k = 100;
 console.log(k);
-
-
