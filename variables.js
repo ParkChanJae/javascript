@@ -13,7 +13,7 @@ let e = false;  //boolean
 let f = null;   //NULL
 
 let g;          //Undefined(변수는 선언했지만, 값을 대입할당하지 않은 상태)
-
+console.log('g의 자료형 : ' +typeof g)
 let h = [1,2,3]; //Array
 
 let i = {name: 'seon', job: 'tutor'}
