@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        div#diplayArea{  
+        div#displayArea{  
         width : 200px;
         height : 200px;
         border : 5px double #6699FF
@@ -15,13 +15,13 @@
 </head>
 <body>
     <h1>자바스크립트를 이용한 태그제어(p.468)</h1>
-    <div id="diplayArea">이곳의 내용 변경</div>
+    <div id="displayArea">이곳의 내용 변경</div>
     <button type=""button>표시</button>
     <script>
         const Button = document.querySelector("button");
         Button.addEventListener("click", function(){
             const displayArea = document.querySelector("#displayArea");
-            
+            displayArea.innerHTML = "<img src=\"https://picsum.photos/200\" alt=\" 그림\">";
         })
 
     </script>
