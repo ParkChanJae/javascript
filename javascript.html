@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자바스크립트 문법</title>
+    <style>
+        div#diplayArea{  
+        width : 200px;
+        height : 200px;
+        border : 5px double #6699FF
+    }
+
+    </style>
 </head>
 <body>
-    <h1>변수</h1>
-    <script src="variables.js"></script>
+    <h1>자바스크립트를 이용한 태그제어(p.468)</h1>
+    <div id="diplayArea">이곳의 내용 변경</div>
+    <button type=""button>표시</button>
+    <script>
+        const Button = document.querySelector("button");
+        Button.addEventListener("click", function(){
+            const displayArea = document.querySelector("#displayArea");
+            
+        })
+
+    </script>
+</script>
 </body>
 </html>
