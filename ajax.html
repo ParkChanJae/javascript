@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>제이쿼리 ajax</title>
+		<link href="../favicon.ico" rel="shortcut icon">
+		<script src="lib/jquery-3.6.1.js"></script>
+        <style>
+            .d-none {
+				display: none;
+			}
+			table, th, td {
+				border-collapse: collapse;
+			}
+			th, td {
+				border-top:0;
+				border-bottom: 0;
+			}
+        </style>
+	</head>
+	<body>
+		<h1>jquery Ajax</h1>
+		<p>jquery 에서 Ajax 기능을 구현한 메소드들을 사용해서 서버로부터
+		TEXT, HTML, XML 또는</p>
+		<h4>폼</h4>
+		<form action="\search" method="get">
+			<label for="keyword">키워드</label>
+			<input type="text" id="keyword" name="keyword">
+		</form>
+		<form action="\login" method="post">
+			<label for="keyword">키워드</label>
+			<input type="text" id="keyword" name="keyword">
+		</form>
+		
+		<h5>.load() 예제 p.493</h5>
+		<button id="pro">요청(=a.k.a 결과)</button>
+		<hr />
+		<div id="result"></div>
+		<script>
+			// $(function(){
+			// 	/*  엘리먼트.load(url [,data] [,complete(responseText, textStatus, XMLHttpRequest])]) */
+			// 	// p.494
+			// 	$("#pro").click(function(){
+            //         str += "<tr>";
+			// 		$("#result").load("data/html-data.html", function(responseText, textStatus, XMLHttpRequest){
+            //             const data = JSON.parse(responseText);
+            //             for(let i = 0; i < data.length; i++){
+            //                 let $id = data[i]["id"];
+            //                 let $name = data[i]["first_name"]+" "+data[i]["last_name"];
+            //                 let $email = data[i]["email"];
+            //                 let $gender = data[i]["gender"];
+            //                 let $ip= data[i]["ip_address"];
+            //             }      
+            //             str += "<tr>" +$id+"</tr>";
+                        
+
+						// console.log(data[0]["id"]);
+                        // console.log(data[0]["first_name"]);
+                        // console.log(data[0]["last_name"]);
+                        // console.log(data[0]["email"]);
+                        // console.log(data[0]["gender"]);
+            //             // console.log(data[0]["ip_address"]);
+			// 		});
+			// 	})
+			// })
+		</script>
+		
+	</body>
+</html>
